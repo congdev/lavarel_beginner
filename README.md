@@ -16,4 +16,18 @@ Mở trình duyệt, vào địa chỉ localhost://phpmyadmin, phpMyadmin sẽ y
 
 OK, việc cài đặt LAMP trên Ubuntu đến đây đã hoàn tất!
 
+-------------
+
+
+https://www.youtube.com/watch?v=J_Z4VO0_xQ4&ab_channel=T%C3%A2nNguy%E1%BB%85n
+
+Step 1: Install package control 
+https://packagecontrol.io/installation
+
+Copy text
+Step 2:
+Sublime -> View -> Show console -> Paste  and enter
+
+Step3 : Cmd + shirt + P để tìm kiếm package
+
 
