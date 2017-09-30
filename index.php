@@ -12,7 +12,15 @@
 			</tr>
 			<tr>
 				<th>Lession 3:</th>
-				<th><a href="#">Validation form in PhpValidation form in PhpValidation form in PhpValidation form in Php</a></th>
+				<th><a href="fileupload.php"> Upload file </a></th>
+			</tr>
+			<tr>
+				<th>Lession 4:</th>
+				<th><a href="errorhandler.php"> Error Handler </a></th>
+			</tr>
+			<tr>
+				<th>Lession 5:</th>
+				<th><a href="sqldemo.php"> MySQL demo </a></th>
 			</tr>
 		</table>
 <?php require "footer.php" ?>

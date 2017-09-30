@@ -44,6 +44,11 @@ body
 	font-weight: bold;
 }
 
+.header a 
+{
+	text-align: left;
+	font-size: 20px;
+}
 /*Lession table class*/
 
 .lession_list , .file_list

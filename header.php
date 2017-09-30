@@ -12,5 +12,6 @@
 <div class="containter">
 	<div class="header">
 		<span>Training PHP beginer</span>
+		<a href="index.php">HOME</a>
 	</div>
 	<div class="containter">
