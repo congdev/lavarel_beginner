@@ -1,27 +1,40 @@
-<?php require  "header.php" ?>
+<?php 
+//cache in php 
+//http://www.vietnoiviet.com/content/cac-ham-obstart-obgetcontents-obclean-obendflush-la-gi-dung-de-lam-gi
+ob_start();
+//session start
+session_start();
+include('library/database.php');
+include('library/autoload.php');
 
-		<!--Display list lession content -->
-		<table class="lession_list">
-			<tr>
-				<th>Lession 1:</th>
-				<th><a href="validationform.php">Validation form in Php</a></th>
-			</tr>
-			<tr>
-				<th>Lession 2:</th>
-				<th><a href="filehandling.php">File handling php</a></th>
-			</tr>
-			<tr>
-				<th>Lession 3:</th>
-				<th><a href="fileupload.php"> Upload file </a></th>
-			</tr>
-			<tr>
-				<th>Lession 4:</th>
-				<th><a href="errorhandler.php"> Error Handler </a></th>
-			</tr>
-			<tr>
-				<th>Lession 5:</th>
-				<th><a href="sqldemo.php"> MySQL demo </a></th>
-			</tr>
-		</table>
-<?php require "footer.php" ?>
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>user manager</title>
+	<link rel="stylesheet" type="text/css" href="#">
+</head>
+<body>
+	<?php 
+		//Show user 
+		if (isset($_SESSION['name']) && $_SESSION['level'] >=2) {
+			echo "<p style='text-align:center'>Chao mung <span style='color:red'>".$_SESSION['name']."</b></p>";
+			echo "<p style='text-align:center'><a href='index.php?controller=user&action=logout'>Logout</a></p>";
+		}
+		if (isset($_GET['controller'])) {
+			switch ($_GET['controller']) {
+				case 'user':
+					include('controller/user/controller.php');
+					break;
+			}
+		}
+		else {
+			header("location:index.php?controller=user&action=login");
+		}
 
+	?>
+
+</body>
+</html>
